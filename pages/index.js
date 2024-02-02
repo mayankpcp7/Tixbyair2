@@ -1,11 +1,14 @@
 import Header from "@/components/common/Header";
-import NavBar from "@/components/common/Navbar";
+import FaqSec from "@/components/FaqSec";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
     <>
       <div className="bg-white">
-        <Header/>
+        <Header />
+        <FaqSec />
+        <Footer />
       </div>
     </>
   );
