@@ -1,3 +1,4 @@
+import FaqSec from "@/components/FaqSec";
 import Footer from "@/components/Footer";
 import NavBar from "@/components/common/Navbar";
 
@@ -6,6 +7,7 @@ export default function Home() {
     <>
       <div className="bg-white">
         {/* <NavBar /> */}
+        {/* <FaqSec /> */}
         <Footer />
       </div>
     </>

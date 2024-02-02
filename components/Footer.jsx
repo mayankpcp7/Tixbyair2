@@ -13,7 +13,7 @@ const Footer = () => {
                 <div className='max-w-[1140px] mx-auto px-3'>
                     <div className='flex items-center justify-center flex-col'>
                         <div>
-                            <Image className="sm:max-w-[271px] sm:h-[89.35] max-w-[220px] h-[74px] cursor-pointer mt-8 sm:mt-10 md:mt-[51px]" src={Footer_logo} alt="logo"></Image>
+                            <Image className="sm:max-w-[271px] sm:h-[89.35px] max-w-[220px] h-[74px] cursor-pointer mt-8 sm:mt-10 md:mt-[51px]" src={Footer_logo} alt="logo"></Image>
                         </div>
                         <p className='font-inter text-base font-normal leading-6 text-white opacity-70 mt-[11px] sm:mt-4 text-center max-w-[462px] px-12'>See who showed up. View analytics, create tickets, and track who's supporting you the most.</p>
 
