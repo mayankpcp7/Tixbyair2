@@ -25,24 +25,46 @@ const NavBar = () => {
   return (
     <>
       <section className="relative z-[2]">
-        <div className="max-w-[1200px] mx-auto">
-          <div className="flex justify-between items-center py-[20px] pe-3 xl:pe-5">
-            <div>
-              <Image
-                className="w-[340px] cursor-pointer"
-                src={logo}
-                alt="logo"
-              ></Image>
-            </div>
-            <div onClick={showUl} className="z-20 xl:hidden">
-              <h3 className="text-purple text-[30px]">
-                {head ? <BiMenu /> : <RxCross1 />}
-              </h3>
-            </div>
-            <div
-              className={`flex flex-col xl:flex-row fixed xl:relative w-full min-h-screen xl:min-h-0 top-[0] left-[-100%] xl:left-0 ttransition-opacity duration-700 xl:transition-none  justify-center xl:justify-end
+        <div className="flex md:mt-[-1px]  justify-between md:items-start items-center border-b-2 border-black ">
+          <div className=" border-r-[2px] border-black border-solid ">
+            <Image
+              className="max-w-[73px] sm:max-w-[180px] m-2 sm:mx-[30px] sm:my-[10px] cursor-pointer"
+              src={logo}
+              alt="logo"
+            ></Image>
+          </div>
+          <div onClick={showUl} className="z-20 md:hidden">
+            <h3 className="text-black text-[20px]">
+              {head ? (
+                <BiMenu className=" border-black" />
+              ) : (
+                <RxCross1 className="text-[#4d4d4d]" />
+              )}
+            </h3>
+          </div>
+          <div
+            className={`flex flex-col md:flex-row fixed md:relative w-full min-h-screen md:min-h-0 top-[0] left-[-100%] md:left-0 ttransition-opacity duration-700 md:transition-none  justify-center md:justify-end
            items-center ${head ? "" : "!left-0 backdrop-blur-lg"}`}
-            ></div>
+          >
+            <li className="border-x-2 px-[30px] pt-[30px] pb-[25px] border-black">
+              <a
+                className="text-black font-inter text-base font-normal leading-6 "
+                href="#"
+              >
+                Features
+              </a>
+            </li>
+            <li className="md:border-r-2  md:ps-[36px] md:pe-[24px] pt-[30px] pb-[25px] border-black">
+              <a
+                className="text-black font-inter text-base font-normal leading-6 "
+                href="#"
+              >
+                Faq
+              </a>
+            </li>
+            <button className="border-0 border-r-2 mb-[-1px] py-[27.5px] ps-[55px] pe-[58px] bg_orange font-semibold border-black">
+              LOG IN
+            </button>
           </div>
         </div>
       </section>
