@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <div className="bg-white">
         {/* <NavBar /> */}
-        {/* <FaqSec /> */}
+        <FaqSec />
         <Footer />
       </div>
     </>
