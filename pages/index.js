@@ -1,4 +1,5 @@
 import Header from "@/components/common/Header";
+import Service from "@/components/common/Service";
 import FaqSec from "@/components/FaqSec";
 import Footer from "@/components/Footer";
 
@@ -6,8 +7,10 @@ export default function Home() {
   return (
     <>
       <div className="bg-white">
-        <Header />
+        {/* <Header /> */}
+
         <FaqSec />
+        <Service/>
         <Footer />
       </div>
     </>

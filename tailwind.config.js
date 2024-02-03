@@ -9,8 +9,9 @@ module.exports = {
     container: {
       padding: {
         DEFAULT: "24px",
-      },
-    },
+       },
+     },
+     
     extend: {
       fontFamily: {
         satoshi: "Satoshi, sans-serif",
@@ -33,6 +34,7 @@ module.exports = {
         "5xl": "48px",
         "6xl": "65px",
       },
+
     },
   },
   plugins: [],

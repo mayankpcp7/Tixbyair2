@@ -14,3 +14,17 @@
   background-size: cover;
   background-position: center;
 }
+.service_shadow {
+  box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
+}
+
+@media (max-width: 1024px) {
+  .service_shadow {
+    box-shadow: 8.983050346374512px 8.983050346374512px 0px 0px rgba(0, 0, 0, 1);
+  }
+}
+@media (max-width: 375px) {
+  .p_3 {
+    padding: 12px !important;
+  }
+}
