@@ -6,3 +6,33 @@
 /* .accordion-item.active {
     box-Shadow: 6px 6px 0px 0px #000 !important;
 } */
+* {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.bg_orange {
+  background: linear-gradient(142.51deg, #fb981d 0%, #fb6609 89.88%);
+}
+
+.bg_header {
+  background-image: url(/images/webp/bg_header.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+
+.faq_shadow {
+  box-Shadow: 6px 6px 0px 0px #000;
+}
+
+:focus-visible {
+  outline: none !important;
+}
+
+@media (min-width:1024px) and (max-width:1140px) {
+  .horizontal_wave {
+    right: 0%;
+    top: 25.5%;
+  }
+}

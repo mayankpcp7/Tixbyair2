@@ -1,25 +1,44 @@
 import { useState } from 'react';
-import { FaAngleDown, FaAngleUp } from 'react-icons/fa';
 
-const Accordion = ({ items, defaultOpenIndex }) => {
-    const [activeIndex, setActiveIndex] = useState(defaultOpenIndex);
+const Accordion = ({ items }) => {
+    const [expandedIndex, setExpandedIndex] = useState(null);
 
-    const handleClick = (index) => {
-        setActiveIndex(index === activeIndex ? null : index);
+    const toggleAccordion = (index) => {
+        setExpandedIndex(expandedIndex === index ? null : index);
     };
 
     return (
-        <div className='lg:me-8'>
+        <div>
             {items.map((item, index) => (
-                <div key={index} style={{ border: '1px solid #000', marginBottom: '19px', maxWidth: '617px', width: '100%', borderRadius: '10px', boxShadow: "6px 6px 0px 0px #000", transition: "all 3s ease- out", }}>
-                    <div onClick={() => handleClick(index)} style={{ cursor: 'pointer', paddingLeft: '20px', paddingRight: '25px', paddingTop: '19px', paddingBottom: '10px', }}>
-                        <h3 className='font-inter font-medium text-[20px] leading-[30px]'>{item.title}</h3>
-                    </div>
-                    {activeIndex === index && (
-                        <div style={{ paddingLeft: '20px', paddingRight: '25px', paddingBottom: '15.8px' }}>
-                            <p className='font-inter font-normal text-base leading-6 text-black opacity-70 max-w-[572px] pe-6'>{item.content}</p>
+                <div key={index} className="pb-6 lg:pb-5 lg:me-9">
+                    <div className=' border-black border-solid border rounded-[10px] ps-5 pe-6 faq_shadow'>
+                        <h2>
+                            <button
+                                type="button"
+                                className={`flex items-center justify-between w-full text-left font-medium text-[20px] leading-[30px] pt-[19px]  text-black font-inter ${expandedIndex ? "pb-[9px]" : "pb-[19px]"}`}
+                                onClick={() => toggleAccordion(index)}
+                                aria-expanded={expandedIndex === index}
+                                aria-controls={`faqs-text-${index}`}
+                            >
+                                <span>{item.title}</span>
+
+                                <svg className={`transform origin-center transition duration-200 ease-out ${expandedIndex === index ? 'rotate-180' : ''}`} width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.12953 0.961246C2.47703 0.286246 1.39703 0.286247 0.74453 0.938747C0.0695315 1.61375 0.0695315 2.67125 0.74453 3.32375L8.55202 11.1762C8.86702 11.4913 9.29452 11.6712 9.74452 11.6712C10.1945 11.6712 10.622 11.4913 10.937 11.1762L18.7445 3.32375C19.082 3.00875 19.2395 2.58125 19.2395 2.15375C19.2395 1.70375 19.082 1.27625 18.7445 0.938747C18.0695 0.286247 17.012 0.286246 16.3595 0.961246L9.74452 7.59875L3.12953 0.961246Z" fill="black" />
+                                </svg>
+
+                            </button>
+                        </h2>
+                        <div
+                            id={`faqs-text-${index}`}
+                            role="region"
+                            aria-labelledby={`faqs-title-${index}`}
+                            className={`grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out ${expandedIndex === index ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}
+                        >
+                            <div className="overflow-hidden">
+                                <p className="pb-4 text-black opacity-70 font-inter font-normal text-base leading-6 max-w-[572px] pe-8">{item.content}</p>
+                            </div>
                         </div>
-                    )}
+                    </div>
                 </div>
             ))}
         </div>

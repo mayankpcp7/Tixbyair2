@@ -1,16 +1,18 @@
-import Accordion from "@/components/Accordion";
+import FAQ2 from "@/components/FAQ2";
 import FaqSec from "@/components/FaqSec";
 import Footer from "@/components/Footer";
-import NavBar from "@/components/common/Navbar";
+import Header from "@/components/common/Header";
+
 
 export default function Home() {
   return (
-    <>
-      <div className="bg-white">
-        {/* <NavBar /> */}
-        <FaqSec />
-        <Footer />
-      </div>
-    </>
+
+    <div className="">
+      {/* <Header /> */}
+      <FaqSec />
+      <Footer />
+
+    </div>
+
   );
 }

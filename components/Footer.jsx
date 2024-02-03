@@ -18,15 +18,15 @@ const Footer = () => {
                         <p className='font-inter text-base font-normal leading-6 text-white opacity-70 mt-[11px] sm:mt-4 text-center max-w-[462px] px-12'>See who showed up. View analytics, create tickets, and track who's supporting you the most.</p>
 
                         <div className='flex items-center gap-5 sm:gap-6 md:gap-7 lg:gap-8 mt-4 sm:mt-5 md:mt-6'>
-                            <a href="#" className='text-white font-inter text-base font-normal leading-6'>Features</a>
-                            <a href="#" className='text-white font-inter text-base font-normal leading-6'>FAQ</a>
+                            <a href="#" className='text-white font-inter text-base font-normal leading-6 hover:text-[#fe720b] duration-300 transition-all'>Features</a>
+                            <a href="#" className='text-white font-inter text-base font-normal leading-6 hover:text-[#fe720b] duration-300 transition-all'>FAQ</a>
                         </div>
 
                         <div className='flex items-center justify-center gap-5 mt-5 sm:mt-6 md:mt-7 lg:mt-8 mb-8'>
-                            <a href="#"><Image className="max-w-[43.08px]" src={Instagram} alt="Instagram logo"></Image></a>
-                            <a href="#"><Image className="max-w-[43.08px]" src={Facebook} alt="Facebook logo"></Image></a>
-                            <a href="#"><Image className="max-w-[43.08px]" src={Telegram} alt="Telegram logo"></Image></a>
-                            <a href="#"><Image className="max-w-[43.08px]" src={Twitter} alt="twitter logo"></Image></a>
+                            <a href="#"><Image className="max-w-[33.55px] sm:max-w-[38px] md:max-w-[43.08px] duration-300 hover:scale-[0.9]" src={Instagram} alt="Instagram logo"></Image></a>
+                            <a href="#"><Image className="max-w-[33.55px] sm:max-w-[38px] md:max-w-[43.08px] duration-300 hover:scale-[0.9]" src={Facebook} alt="Facebook logo"></Image></a>
+                            <a href="#"><Image className="max-w-[33.55px] sm:max-w-[38px] md:max-w-[43.08px] duration-300 hover:scale-[0.9]" src={Telegram} alt="Telegram logo"></Image></a>
+                            <a href="#"><Image className="max-w-[33.55px] sm:max-w-[38px] md:max-w-[43.08px] duration-300 hover:scale-[0.9]" src={Twitter} alt="twitter logo"></Image></a>
                         </div>
                     </div>
                 </div>
