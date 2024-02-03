@@ -1,10 +1,17 @@
 import React from "react";
 import { service } from "./Helper";
 import Image from "next/image";
+import leftvec from "../../public/images/svg/sevice_left_vec.svg";
+import rightvec from "../../public/images/svg/service_right.svg";
 const Service = () => {
   return (
     <>
-      <section className="pt-[89px] px-2 bg-white lg:pb-[118px] sm:px-5 md:-pb-[60px] pb-[48px]">
+      <section className="pt-[89px] px-2 bg-white lg:pb-[118px] sm:px-5 md:-pb-[60px] pb-[48px] relative">
+        <Image src={rightvec} className="sm:hidden absolute top-[20%] end-0"></Image>
+        <Image
+          src={leftvec}
+          className="z-0 absolute start-[-8px] top-[45%]"
+        ></Image>
         <div className="max-w-[1140px] mx-auto ">
           <div className="flex sm:flex-col lg:flex-row ps-4 md:ps-0 flex-col sm:items-center items-start justify-between">
             <h2 className="lg:text-start sm:text-center text-start font-black text-[28px] sm:text-4xl  lg:text-5xl font-satoshi max-w-[560px] text-black">
@@ -15,7 +22,7 @@ const Service = () => {
               amet tortor nisl lacinia. Ut et donec ac velit diam lectus dui.
             </p>
           </div>
-          <div className="flex md:mx-[-17px] flex-row justify-center  md:mt-12 mt-7 flex-wrap">
+          <div className="flex relative z-20 md:mx-[-17px] flex-row justify-center  md:mt-12 mt-7 flex-wrap">
             {service.map((card) => {
               return (
                 <>

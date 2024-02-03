@@ -14,6 +14,21 @@
   background-size: cover;
   background-position: center;
 }
+.community {
+  -webkit-text-stroke-width: 1.5;
+  -webkit-text-stroke-color: #0d0c0c;
+  color: rgb(0, 0, 0);
+}
+.btn_shadow {
+  box-shadow: 3px 4px 0px 0px rgba(0, 0, 0, 1);
+}
+.btn_shadow:hover{
+  box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 1);
+  background: linear-gradient(142.51deg, #ff8c00 0%, #fbaa09f7 89.88%);
+}
+.bg_btn {
+  background: linear-gradient(142.51deg, #fb981d 0%, #fb6609 89.88%);
+}
 .service_shadow {
   box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
 }
