@@ -42,27 +42,27 @@ const items = [
 const FaqSec = () => {
     return (
         <div className='max-w-[1440px] mx-auto overflow-hidden relative'>
-            <Image className='max-w-[221px] h-[63px] absolute end-0 top-5 md:block hidden' src={side_vector_img}></Image>
-            <Image className='max-w-[221px] h-[63px] absolute start-0 bottom-[16%] md:block hidden' src={side_vector_img}></Image>
-            <div className='max-w-[1140px] mx-auto px-6 sm:px-5 md:px-3 relative z-10'>
+            <Image className='max-w-[221px] h-[63px] absolute end-0 top-5 xl:block hidden !-z-10' src={side_vector_img}></Image>
+            <Image className='max-w-[221px] h-[63px] absolute start-0 bottom-[16%] xl:block hidden !-z-10' src={side_vector_img}></Image>
+            <div className='max-w-[1140px] mx-auto px-6 sm:px-5 md:px-3 relative'>
                 <div className='flex items-center justify-center text-center flex-col'>
                     <h2 className='font-satoshi font-black text-3xl sm:text-[32px] md:text-4xl lg:text-5xl leading-[38px] sm:leading-normal md:leading-normal lg:leading-[64.5px] mb-2.5 sm:mb-3 md:mb-4'>Frequently Asked Questions</h2>
                     <p className='font-inter font-normal text-base leading-6 text-black opacity-70 max-w-[787px] px-3'>Lorem ipsum dolor sit amet consectetur. Semper vitae nullam eget consectetur mi. Vulputate sapien a a bibendum suspendisse quam. Hac posuere eget nam diam velit urna adipiscing diam. </p>
                 </div>
 
                 <div className='mt-9 sm:mt-10 md:mt-12 lg:mt-16 mb-[88px] lg:mb-[92px]'>
-                    <div className='flex items-center justify-center flex-wrap'>
+                    <div className='flex items-center justify-center flex-wrap z-10 relative'>
 
                         <div className="lg:w-7/12">
                             <div>
-                                <Accordion items={items} defaultOpenIndex={0} />
+                                <Accordion items={items} />
                             </div>
 
                         </div>
-                        <div className="lg:w-5/12 mt-11 lg:mt-0">
+                        <div className="lg:w-5/12 mt-11 lg:mt-0 ">
                             <div className='relative'>
                                 <Image className='max-w-[476px] max-h-[461px] w-full' src={ScanerImage}></Image>
-                                <Image className='max-w-[221px] h-[63px] absolute end-[-18.5%] top-[25.5%] horizontal_wave' src={waveImg}></Image>
+                                <Image className=' max-w-[221px] h-[63px] absolute end-[-18.5%] top-[25.5%] horizontal_wave' src={waveImg} alt='waveImg'></Image>
                             </div>
                         </div>
                     </div>
